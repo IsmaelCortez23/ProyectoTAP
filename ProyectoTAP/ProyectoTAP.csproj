@@ -51,6 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionDB.cs" />
+    <Compile Include="FrmAretes.cs" />
+    <Compile Include="FrmAretes.Designer.cs">
+      <DependentUpon>FrmAretes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCadenas.cs" />
     <Compile Include="FrmCadenas.Designer.cs">
       <DependentUpon>FrmCadenas.cs</DependentUpon>

@@ -46,7 +46,7 @@ namespace ProyectoTAP
 			
 			int codCadena = Convert.ToInt32(renglonSeleccionado.Cells["cod_producto"].Value.ToString());
 			string ruta = renglonSeleccionado.Cells["ruta"].Value.ToString();
-			ruta = conexion.rutaDeMiUsuario(ruta,"carlos");
+			ruta = conexion.rutaDeMiUsuario(ruta,"sarai");
 			
 			pbCadenas.Image = Image.FromFile(ruta);//pictureBox para las imagenes de los productos
 			
