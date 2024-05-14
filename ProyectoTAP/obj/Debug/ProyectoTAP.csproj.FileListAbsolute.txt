@@ -22,3 +22,6 @@ C:\Users\52331\OneDrive - zapopan.tecmm.edu.mx\Documentos\SharpDevelop Projects\
 C:\Users\52331\OneDrive - zapopan.tecmm.edu.mx\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.GenerateResource.Cache
 C:\Users\52331\OneDrive - zapopan.tecmm.edu.mx\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.exe
 C:\Users\52331\OneDrive - zapopan.tecmm.edu.mx\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.pdb
+C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmAretes.resources
+C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmEsclavas.resources
+C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmAnillos.resources

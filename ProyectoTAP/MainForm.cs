@@ -35,6 +35,26 @@ namespace ProyectoTAP
 			FrmCadenas cadena = new FrmCadenas();
 			cadena.ShowDialog();
 		}
+		
+		
+		void AnillosToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			FrmAnillos anillos = new FrmAnillos();
+			anillos.ShowDialog();
+		}
+		
+		void EsclavasToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			FrmEsclavas esclavas = new FrmEsclavas();
+			esclavas.ShowDialog();
+		}
+		
+		
+		void AretesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			FrmAretes aretes = new FrmAretes();
+			aretes.ShowDialog();
+		}
 	}
 	
 	

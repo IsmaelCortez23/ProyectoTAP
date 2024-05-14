@@ -40,6 +40,7 @@ namespace ProyectoTAP
 			this.cadenasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.anillosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aretesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.esclavasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -50,7 +51,8 @@ namespace ProyectoTAP
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.cadenasToolStripMenuItem,
 									this.anillosToolStripMenuItem,
-									this.aretesToolStripMenuItem});
+									this.aretesToolStripMenuItem,
+									this.esclavasToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(181, 398);
@@ -67,15 +69,26 @@ namespace ProyectoTAP
 			// 
 			// anillosToolStripMenuItem
 			// 
+			this.anillosToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.anillosToolStripMenuItem.Name = "anillosToolStripMenuItem";
-			this.anillosToolStripMenuItem.Size = new System.Drawing.Size(174, 19);
+			this.anillosToolStripMenuItem.Size = new System.Drawing.Size(174, 52);
 			this.anillosToolStripMenuItem.Text = "Anillos";
+			this.anillosToolStripMenuItem.Click += new System.EventHandler(this.AnillosToolStripMenuItemClick);
 			// 
 			// aretesToolStripMenuItem
 			// 
+			this.aretesToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.aretesToolStripMenuItem.Name = "aretesToolStripMenuItem";
-			this.aretesToolStripMenuItem.Size = new System.Drawing.Size(174, 19);
+			this.aretesToolStripMenuItem.Size = new System.Drawing.Size(174, 52);
 			this.aretesToolStripMenuItem.Text = "Aretes";
+			this.aretesToolStripMenuItem.Click += new System.EventHandler(this.AretesToolStripMenuItemClick);
+			// 
+			// esclavasToolStripMenuItem
+			// 
+			this.esclavasToolStripMenuItem.Name = "esclavasToolStripMenuItem";
+			this.esclavasToolStripMenuItem.Size = new System.Drawing.Size(174, 19);
+			this.esclavasToolStripMenuItem.Text = "Esclavas";
+			this.esclavasToolStripMenuItem.Click += new System.EventHandler(this.EsclavasToolStripMenuItemClick);
 			// 
 			// MainForm
 			// 
@@ -91,6 +104,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem esclavasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem aretesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem anillosToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem cadenasToolStripMenuItem;
