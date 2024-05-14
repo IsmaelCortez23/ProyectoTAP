@@ -24,7 +24,7 @@ namespace ProyectoTAP
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
+			this.WindowState = FormWindowState.Maximized;
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//

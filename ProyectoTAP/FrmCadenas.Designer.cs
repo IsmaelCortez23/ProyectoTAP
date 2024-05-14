@@ -36,13 +36,14 @@ namespace ProyectoTAP
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.dgvCadenas = new System.Windows.Forms.DataGridView();
 			this.tbxBuscarCadenas = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tbxDescripcionCadenas = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.pbCadenas = new System.Windows.Forms.PictureBox();
+			this.btnCadenaCarrito = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvCadenas)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCadenas)).BeginInit();
 			this.SuspendLayout();
@@ -53,31 +54,32 @@ namespace ProyectoTAP
 			this.dgvCadenas.AllowUserToDeleteRows = false;
 			this.dgvCadenas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
 			this.dgvCadenas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvCadenas.DefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvCadenas.DefaultCellStyle = dataGridViewCellStyle2;
 			this.dgvCadenas.Location = new System.Drawing.Point(36, 33);
 			this.dgvCadenas.Name = "dgvCadenas";
-			this.dgvCadenas.Size = new System.Drawing.Size(453, 283);
+			this.dgvCadenas.Size = new System.Drawing.Size(777, 332);
 			this.dgvCadenas.TabIndex = 0;
-			this.dgvCadenas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCadenasCellDoubleClick);
+			this.dgvCadenas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCadenasCellClick);
 			// 
 			// tbxBuscarCadenas
 			// 
-			this.tbxBuscarCadenas.Location = new System.Drawing.Point(151, 356);
+			this.tbxBuscarCadenas.Location = new System.Drawing.Point(129, 426);
 			this.tbxBuscarCadenas.Name = "tbxBuscarCadenas";
 			this.tbxBuscarCadenas.Size = new System.Drawing.Size(356, 20);
 			this.tbxBuscarCadenas.TabIndex = 2;
+			this.tbxBuscarCadenas.TextChanged += new System.EventHandler(this.TbxBuscarCadenasTextChanged);
 			// 
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(36, 356);
+			this.label1.Location = new System.Drawing.Point(36, 426);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(87, 20);
 			this.label1.TabIndex = 3;
@@ -85,14 +87,14 @@ namespace ProyectoTAP
 			// 
 			// tbxDescripcionCadenas
 			// 
-			this.tbxDescripcionCadenas.Location = new System.Drawing.Point(550, 296);
+			this.tbxDescripcionCadenas.Location = new System.Drawing.Point(950, 432);
 			this.tbxDescripcionCadenas.Name = "tbxDescripcionCadenas";
 			this.tbxDescripcionCadenas.Size = new System.Drawing.Size(138, 20);
 			this.tbxDescripcionCadenas.TabIndex = 4;
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(568, 264);
+			this.label2.Location = new System.Drawing.Point(950, 406);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(138, 23);
 			this.label2.TabIndex = 5;
@@ -100,19 +102,30 @@ namespace ProyectoTAP
 			// 
 			// pbCadenas
 			// 
-			this.pbCadenas.Location = new System.Drawing.Point(568, 33);
+			this.pbCadenas.Location = new System.Drawing.Point(901, 33);
 			this.pbCadenas.Name = "pbCadenas";
-			this.pbCadenas.Size = new System.Drawing.Size(153, 194);
+			this.pbCadenas.Size = new System.Drawing.Size(228, 332);
 			this.pbCadenas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pbCadenas.TabIndex = 7;
 			this.pbCadenas.TabStop = false;
+			// 
+			// btnCadenaCarrito
+			// 
+			this.btnCadenaCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCadenaCarrito.Location = new System.Drawing.Point(605, 470);
+			this.btnCadenaCarrito.Name = "btnCadenaCarrito";
+			this.btnCadenaCarrito.Size = new System.Drawing.Size(244, 42);
+			this.btnCadenaCarrito.TabIndex = 8;
+			this.btnCadenaCarrito.Text = "&Agregar al Carrito";
+			this.btnCadenaCarrito.UseVisualStyleBackColor = true;
 			// 
 			// FrmCadenas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
-			this.ClientSize = new System.Drawing.Size(779, 415);
+			this.ClientSize = new System.Drawing.Size(1187, 524);
+			this.Controls.Add(this.btnCadenaCarrito);
 			this.Controls.Add(this.pbCadenas);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.tbxDescripcionCadenas);
@@ -126,6 +139,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnCadenaCarrito;
 		private System.Windows.Forms.PictureBox pbCadenas;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox tbxDescripcionCadenas;

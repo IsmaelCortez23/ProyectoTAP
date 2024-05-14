@@ -20,8 +20,8 @@ namespace ProyectoTAP
 	/// 
 	public class ConexionDB
 	{
-		//datos para conectarse la base de datos
-		string strConection = "server=172.16.27.254; user id=prueba; password=prueba123; database=joyeria";
+		//datos para conectarse la base de datos /casa/192.168.1.250 /tecjalisco/172.16.27.254
+		string strConection = "server=192.168.1.250; user id=prueba; password=prueba123; database=joyeria";
 		MySqlConnection conec;
 		MySqlCommand cmd;
 		
@@ -84,13 +84,14 @@ namespace ProyectoTAP
 					rutaUsuario = "C:\\Users\\carlo\\OneDrive\\Documentos\\SharpDevelop Projects\\";
 					break;
 				case "sarai":
-					rutaUsuario = "C:\\Users\\52331\\OneDrive - zapopan.tecmm.edu.mx\\Documentos\SharpDevelop Projects\\";
+					rutaUsuario = "C:\\Users\\52331\\OneDrive - zapopan.tecmm.edu.mx\\Documentos\\SharpDevelop Projects\\";
 					break;
 				case "gaby":
-					rutaUsuario = "C:\\Users\\gabyp\\OneDrive\\Documentos\SharpDevelop Projects\";
+					rutaUsuario = "C:\\Users\\gabyp\\OneDrive\\Documentos\\SharpDevelop Projects\\";
 					break;
 				case "isma":
 					rutaUsuario = "C:\\Users\\Ismae\\";
+					break;
 			}
 			
 			string []division = ruta.Split('\\');
