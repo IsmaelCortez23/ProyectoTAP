@@ -20,7 +20,11 @@ namespace ProyectoTAP
 	/// 
 	public class ConexionDB
 	{
+<<<<<<< HEAD
 		//datos para conectarse la base de datos
+=======
+		//datos para conectarse la base de datos /casa/192.168.1.250 /tecjalisco/172.16.27.254
+>>>>>>> beb85a3afb297ad8280278812f7000113188b2f8
 		string strConection = "server=172.16.27.254; user id=prueba; password=prueba123; database=joyeria";
 		MySqlConnection conec;
 		MySqlCommand cmd;
@@ -81,16 +85,22 @@ namespace ProyectoTAP
 			
 			switch (usuario){
 				case "carlos":
-					rutaUsuario = "C:\\Users\\carlo\\OneDrive\\";
+					rutaUsuario = "C:\\Users\\carlo\\OneDrive\\Documentos\\SharpDevelop Projects\\";
 					break;
 				case "sarai":
-					rutaUsuario = "C:\\Users\\52331\\OneDrive - zapopan.tecmm.edu.mx\\";
+					rutaUsuario = "C:\\Users\\52331\\OneDrive - zapopan.tecmm.edu.mx\\Documentos\\SharpDevelop Projects\\";
+					break;
+				case "gaby":
+					rutaUsuario = "C:\\Users\\gabyp\\OneDrive\\Documentos\\SharpDevelop Projects\\";
+					break;
+				case "isma":
+					rutaUsuario = "C:\\Users\\Ismae\\";
 					break;
 			}
 			
 			string []division = ruta.Split('\\');
 			Array.Reverse(division); 
-			string[] ultimos7 = division.Take(7).ToArray();
+			string[] ultimos7 = division.Take(5).ToArray();
 			Array.Reverse(ultimos7);
 			string nuevaRuta = string.Join("\\", ultimos7);
 

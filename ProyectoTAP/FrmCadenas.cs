@@ -27,6 +27,9 @@ namespace ProyectoTAP
 			//
 			InitializeComponent();
 			dgvCadenas.DataSource=conexion.cargarDatos("Select cod_producto, tipo_pieza, nombre, Descripcion, precio, ruta from productos");
+			dgvCadenas.Columns[5].Visible = false;
+			this.WindowState = FormWindowState.Maximized;
+			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -34,7 +37,7 @@ namespace ProyectoTAP
 		DataGridViewRow renglonSeleccionado;
 		
 		//cuando el usuario de doble click podra ver la imagen y la descripcion
-		void DgvCadenasCellDoubleClick(object sender, DataGridViewCellEventArgs e)
+		/*void DgvCadenasCellDoubleClick(object sender, DataGridViewCellEventArgs e)
 		{
 			foreach(DataGridViewRow renglon in dgvCadenas.Rows){
 			renglon.Selected=false;
@@ -50,8 +53,31 @@ namespace ProyectoTAP
 			
 			pbCadenas.Image = Image.FromFile(ruta);//pictureBox para las imagenes de los productos
 			
+		}*/
+		
+		
+		
+		void DgvCadenasCellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			foreach(DataGridViewRow renglon in dgvCadenas.Rows){
+			renglon.Selected=false;
+			}
+			dgvCadenas.Rows[e.RowIndex].Selected=true;//renglon seleccionado de color azul
+			renglonSeleccionado = dgvCadenas.Rows[e.RowIndex];
+			
+			tbxDescripcionCadenas.Text=renglonSeleccionado.Cells["Descripcion"].Value.ToString(); //mostrar la descripcion debajo de la imagen
+			
+			int codCadena = Convert.ToInt32(renglonSeleccionado.Cells["cod_producto"].Value.ToString());
+			string ruta = renglonSeleccionado.Cells["ruta"].Value.ToString();
+			ruta = conexion.rutaDeMiUsuario(ruta,"carlos");
+			
+			pbCadenas.Image = Image.FromFile(ruta);//pictureBox para las imagenes de los productos
 		}
 		
+		void TbxBuscarCadenasTextChanged(object sender, EventArgs e)
+		{
+			dgvCadenas.DataSource = conexion.cargarDatos("SELECT * FROM productos WHERE descripcion LIKE '%"+tbxBuscarCadenas.Text+"%'");
+		}
 	}
 		
 }

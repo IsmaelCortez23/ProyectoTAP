@@ -53,28 +53,28 @@ namespace ProyectoTAP
 									this.aretesToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(125, 398);
+			this.menuStrip1.Size = new System.Drawing.Size(181, 398);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// cadenasToolStripMenuItem
 			// 
-			this.cadenasToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cadenasToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cadenasToolStripMenuItem.Name = "cadenasToolStripMenuItem";
-			this.cadenasToolStripMenuItem.Size = new System.Drawing.Size(118, 36);
+			this.cadenasToolStripMenuItem.Size = new System.Drawing.Size(174, 54);
 			this.cadenasToolStripMenuItem.Text = "Cadenas";
 			this.cadenasToolStripMenuItem.Click += new System.EventHandler(this.CadenasToolStripMenuItemClick);
 			// 
 			// anillosToolStripMenuItem
 			// 
 			this.anillosToolStripMenuItem.Name = "anillosToolStripMenuItem";
-			this.anillosToolStripMenuItem.Size = new System.Drawing.Size(118, 19);
+			this.anillosToolStripMenuItem.Size = new System.Drawing.Size(174, 19);
 			this.anillosToolStripMenuItem.Text = "Anillos";
 			// 
 			// aretesToolStripMenuItem
 			// 
 			this.aretesToolStripMenuItem.Name = "aretesToolStripMenuItem";
-			this.aretesToolStripMenuItem.Size = new System.Drawing.Size(118, 19);
+			this.aretesToolStripMenuItem.Size = new System.Drawing.Size(174, 19);
 			this.aretesToolStripMenuItem.Text = "Aretes";
 			// 
 			// MainForm

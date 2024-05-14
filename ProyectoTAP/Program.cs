@@ -24,7 +24,7 @@ namespace ProyectoTAP
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FrmCadenas());
+			Application.Run(new MainForm());
 		}
 		
 	}
