@@ -20,11 +20,8 @@ namespace ProyectoTAP
 	/// 
 	public class ConexionDB
 	{
-<<<<<<< HEAD
 		//datos para conectarse la base de datos
-=======
 		//datos para conectarse la base de datos /casa/192.168.1.250 /tecjalisco/172.16.27.254
->>>>>>> beb85a3afb297ad8280278812f7000113188b2f8
 		string strConection = "server=172.16.27.254; user id=prueba; password=prueba123; database=joyeria";
 		MySqlConnection conec;
 		MySqlCommand cmd;
