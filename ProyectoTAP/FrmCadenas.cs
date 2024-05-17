@@ -19,6 +19,8 @@ namespace ProyectoTAP
 	/// </summary>
 	public partial class FrmCadenas : Form
 	{
+		string nombre, descripcion, tipoPieza;
+		int id, costo;
 		ConexionDB conexion = new ConexionDB();
 		public FrmCadenas()
 		{
@@ -58,6 +60,19 @@ namespace ProyectoTAP
 		void TbxBuscarCadenasTextChanged(object sender, EventArgs e)
 		{
 			dgvCadenas.DataSource = conexion.cargarDatos("SELECT * FROM productos WHERE descripcion LIKE '%"+tbxBuscarCadenas.Text+"%'");
+		}
+		
+		void BtnCadenaCarritoClick(object sender, EventArgs e)
+		{
+			FrmCarrito carrito = new FrmCarrito();
+			
+			id = Convert.ToInt32(renglonSeleccionado.Cells["cod_producto"].Value.ToString());
+			nombre = renglonSeleccionado.Cells["nombre"].Value.ToString();
+			descripcion = renglonSeleccionado.Cells["descripcion"].Value.ToString();
+			tipoPieza =renglonSeleccionado.Cells["tipo_pieza"].Value.ToString();
+			costo = Convert.ToInt32(renglonSeleccionado.Cells["costo"].Value.ToString());
+			
+			carrito.datosProducto(id, nombre, descripcion, tipoPieza, costo);
 		}
 	}
 		

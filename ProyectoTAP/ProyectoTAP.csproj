@@ -67,6 +67,10 @@
     <Compile Include="FrmCadenas.Designer.cs">
       <DependentUpon>FrmCadenas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCarrito.cs" />
+    <Compile Include="FrmCarrito.Designer.cs">
+      <DependentUpon>FrmCarrito.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDijes.cs" />
     <Compile Include="FrmDijes.Designer.cs">
       <DependentUpon>FrmDijes.cs</DependentUpon>
@@ -78,6 +82,10 @@
     <Compile Include="FrmJuegos.cs" />
     <Compile Include="FrmJuegos.Designer.cs">
       <DependentUpon>FrmJuegos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVenta.cs" />
+    <Compile Include="FrmVenta.Designer.cs">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
@@ -98,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadenas.resx">
       <DependentUpon>FrmCadenas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarrito.resx">
+      <DependentUpon>FrmCarrito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEsclavas.resx">
       <DependentUpon>FrmEsclavas.Designer.cs</DependentUpon>

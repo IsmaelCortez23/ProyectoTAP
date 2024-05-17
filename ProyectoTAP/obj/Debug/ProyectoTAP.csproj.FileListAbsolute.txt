@@ -26,3 +26,4 @@ C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP
 C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmEsclavas.resources
 C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmAnillos.resources
 C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmAgregarProductos.resources
+C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmCarrito.resources
