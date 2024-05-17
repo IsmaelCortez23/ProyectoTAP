@@ -41,7 +41,12 @@ namespace ProyectoTAP
 			this.anillosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aretesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.esclavasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.juegoDeAretesCadenaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.digesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+			this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
+			this.menuStrip2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
@@ -52,10 +57,12 @@ namespace ProyectoTAP
 									this.cadenasToolStripMenuItem,
 									this.anillosToolStripMenuItem,
 									this.aretesToolStripMenuItem,
-									this.esclavasToolStripMenuItem});
+									this.esclavasToolStripMenuItem,
+									this.juegoDeAretesCadenaToolStripMenuItem,
+									this.digesToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(181, 398);
+			this.menuStrip1.Size = new System.Drawing.Size(442, 342);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -63,7 +70,7 @@ namespace ProyectoTAP
 			// 
 			this.cadenasToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cadenasToolStripMenuItem.Name = "cadenasToolStripMenuItem";
-			this.cadenasToolStripMenuItem.Size = new System.Drawing.Size(174, 54);
+			this.cadenasToolStripMenuItem.Size = new System.Drawing.Size(435, 54);
 			this.cadenasToolStripMenuItem.Text = "Cadenas";
 			this.cadenasToolStripMenuItem.Click += new System.EventHandler(this.CadenasToolStripMenuItemClick);
 			// 
@@ -71,7 +78,7 @@ namespace ProyectoTAP
 			// 
 			this.anillosToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.anillosToolStripMenuItem.Name = "anillosToolStripMenuItem";
-			this.anillosToolStripMenuItem.Size = new System.Drawing.Size(174, 52);
+			this.anillosToolStripMenuItem.Size = new System.Drawing.Size(435, 52);
 			this.anillosToolStripMenuItem.Text = "Anillos";
 			this.anillosToolStripMenuItem.Click += new System.EventHandler(this.AnillosToolStripMenuItemClick);
 			// 
@@ -79,16 +86,52 @@ namespace ProyectoTAP
 			// 
 			this.aretesToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.aretesToolStripMenuItem.Name = "aretesToolStripMenuItem";
-			this.aretesToolStripMenuItem.Size = new System.Drawing.Size(174, 52);
+			this.aretesToolStripMenuItem.Size = new System.Drawing.Size(435, 52);
 			this.aretesToolStripMenuItem.Text = "Aretes";
 			this.aretesToolStripMenuItem.Click += new System.EventHandler(this.AretesToolStripMenuItemClick);
 			// 
 			// esclavasToolStripMenuItem
 			// 
+			this.esclavasToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.esclavasToolStripMenuItem.Name = "esclavasToolStripMenuItem";
-			this.esclavasToolStripMenuItem.Size = new System.Drawing.Size(174, 19);
+			this.esclavasToolStripMenuItem.Size = new System.Drawing.Size(435, 52);
 			this.esclavasToolStripMenuItem.Text = "Esclavas";
 			this.esclavasToolStripMenuItem.Click += new System.EventHandler(this.EsclavasToolStripMenuItemClick);
+			// 
+			// juegoDeAretesCadenaToolStripMenuItem
+			// 
+			this.juegoDeAretesCadenaToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.juegoDeAretesCadenaToolStripMenuItem.Name = "juegoDeAretesCadenaToolStripMenuItem";
+			this.juegoDeAretesCadenaToolStripMenuItem.Size = new System.Drawing.Size(435, 52);
+			this.juegoDeAretesCadenaToolStripMenuItem.Text = "Juego de Aretes-Cadena";
+			this.juegoDeAretesCadenaToolStripMenuItem.Click += new System.EventHandler(this.JuegoDeAretesCadenaToolStripMenuItemClick);
+			// 
+			// digesToolStripMenuItem
+			// 
+			this.digesToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.digesToolStripMenuItem.Name = "digesToolStripMenuItem";
+			this.digesToolStripMenuItem.Size = new System.Drawing.Size(435, 52);
+			this.digesToolStripMenuItem.Text = "Dijes";
+			this.digesToolStripMenuItem.Click += new System.EventHandler(this.DigesToolStripMenuItemClick);
+			// 
+			// menuStrip2
+			// 
+			this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.agregarProductosToolStripMenuItem});
+			this.menuStrip2.Location = new System.Drawing.Point(0, 342);
+			this.menuStrip2.Name = "menuStrip2";
+			this.menuStrip2.Size = new System.Drawing.Size(729, 56);
+			this.menuStrip2.TabIndex = 1;
+			this.menuStrip2.Text = "menuStrip2";
+			// 
+			// agregarProductosToolStripMenuItem
+			// 
+			this.agregarProductosToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
+			this.agregarProductosToolStripMenuItem.Size = new System.Drawing.Size(348, 52);
+			this.agregarProductosToolStripMenuItem.Text = "Agregar Productos";
+			this.agregarProductosToolStripMenuItem.Click += new System.EventHandler(this.AgregarProductosToolStripMenuItemClick);
 			// 
 			// MainForm
 			// 
@@ -96,14 +139,21 @@ namespace ProyectoTAP
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(729, 398);
 			this.Controls.Add(this.menuStrip1);
+			this.Controls.Add(this.menuStrip2);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "ProyectoTAP";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			this.menuStrip2.ResumeLayout(false);
+			this.menuStrip2.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem agregarProductosToolStripMenuItem;
+		private System.Windows.Forms.MenuStrip menuStrip2;
+		private System.Windows.Forms.ToolStripMenuItem digesToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem juegoDeAretesCadenaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem esclavasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem aretesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem anillosToolStripMenuItem;

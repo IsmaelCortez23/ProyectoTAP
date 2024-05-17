@@ -25,3 +25,4 @@ C:\Users\52331\OneDrive - zapopan.tecmm.edu.mx\Documentos\SharpDevelop Projects\
 C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmAretes.resources
 C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmEsclavas.resources
 C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmAnillos.resources
+C:\Users\carlo\OneDrive\Documentos\SharpDevelop Projects\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.FrmAgregarProductos.resources

@@ -51,6 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionDB.cs" />
+    <Compile Include="FrmAgregarProductos.cs" />
+    <Compile Include="FrmAgregarProductos.Designer.cs">
+      <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAnillos.cs" />
     <Compile Include="FrmAnillos.Designer.cs">
       <DependentUpon>FrmAnillos.cs</DependentUpon>
@@ -63,9 +67,17 @@
     <Compile Include="FrmCadenas.Designer.cs">
       <DependentUpon>FrmCadenas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDijes.cs" />
+    <Compile Include="FrmDijes.Designer.cs">
+      <DependentUpon>FrmDijes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEsclavas.cs" />
     <Compile Include="FrmEsclavas.Designer.cs">
       <DependentUpon>FrmEsclavas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJuegos.cs" />
+    <Compile Include="FrmJuegos.Designer.cs">
+      <DependentUpon>FrmJuegos.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
@@ -75,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAgregarProductos.resx">
+      <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAnillos.resx">
       <DependentUpon>FrmAnillos.cs</DependentUpon>
     </EmbeddedResource>

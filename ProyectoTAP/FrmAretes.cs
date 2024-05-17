@@ -25,7 +25,8 @@ namespace ProyectoTAP
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-		     dgvAretes.DataSource=conexion.cargarDatos("Select cod_producto, tipo_pieza, nombre, Descripcion, precio, ruta from productos");
+		     dgvAretes.DataSource=conexion.cargarDatos("Select cod_producto, tipo_pieza, nombre, Descripcion, precio, ruta from productos"+
+			                                          "	WHERE tipo_pieza = 'Aretes'");
 			 dgvAretes.Columns[5].Visible = false;
 			this.WindowState = FormWindowState.Maximized;
 			

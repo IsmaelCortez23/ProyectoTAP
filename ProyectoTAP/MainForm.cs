@@ -55,6 +55,24 @@ namespace ProyectoTAP
 			FrmAretes aretes = new FrmAretes();
 			aretes.ShowDialog();
 		}
+		
+		void JuegoDeAretesCadenaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			FrmJuegos juegos = new FrmJuegos();
+			juegos.ShowDialog();
+		}
+		
+		void DigesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			FrmDije dije = new FrmDije();
+			dije.ShowDialog();
+		}
+		
+		void AgregarProductosToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			FrmAgregarProductos agregar = new FrmAgregarProductos();
+			agregar.ShowDialog();
+		}
 	}
 	
 	
