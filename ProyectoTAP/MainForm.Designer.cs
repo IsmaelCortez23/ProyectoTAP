@@ -45,8 +45,11 @@ namespace ProyectoTAP
 			this.digesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip2 = new System.Windows.Forms.MenuStrip();
 			this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.menuStrip3 = new System.Windows.Forms.MenuStrip();
+			this.carritoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.menuStrip2.SuspendLayout();
+			this.menuStrip3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
@@ -62,7 +65,7 @@ namespace ProyectoTAP
 									this.digesToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(442, 342);
+			this.menuStrip1.Size = new System.Drawing.Size(442, 442);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -119,9 +122,9 @@ namespace ProyectoTAP
 			this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.agregarProductosToolStripMenuItem});
-			this.menuStrip2.Location = new System.Drawing.Point(0, 342);
+			this.menuStrip2.Location = new System.Drawing.Point(0, 442);
 			this.menuStrip2.Name = "menuStrip2";
-			this.menuStrip2.Size = new System.Drawing.Size(729, 56);
+			this.menuStrip2.Size = new System.Drawing.Size(576, 56);
 			this.menuStrip2.TabIndex = 1;
 			this.menuStrip2.Text = "menuStrip2";
 			// 
@@ -133,13 +136,33 @@ namespace ProyectoTAP
 			this.agregarProductosToolStripMenuItem.Text = "Agregar Productos";
 			this.agregarProductosToolStripMenuItem.Click += new System.EventHandler(this.AgregarProductosToolStripMenuItemClick);
 			// 
+			// menuStrip3
+			// 
+			this.menuStrip3.Dock = System.Windows.Forms.DockStyle.Right;
+			this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.carritoToolStripMenuItem});
+			this.menuStrip3.Location = new System.Drawing.Point(576, 0);
+			this.menuStrip3.Name = "menuStrip3";
+			this.menuStrip3.Size = new System.Drawing.Size(153, 498);
+			this.menuStrip3.TabIndex = 2;
+			this.menuStrip3.Text = "menuStrip3";
+			// 
+			// carritoToolStripMenuItem
+			// 
+			this.carritoToolStripMenuItem.Font = new System.Drawing.Font("Nirmala UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.carritoToolStripMenuItem.Name = "carritoToolStripMenuItem";
+			this.carritoToolStripMenuItem.Size = new System.Drawing.Size(140, 52);
+			this.carritoToolStripMenuItem.Text = "Carrito";
+			this.carritoToolStripMenuItem.Click += new System.EventHandler(this.CarritoToolStripMenuItemClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(729, 398);
+			this.ClientSize = new System.Drawing.Size(729, 498);
 			this.Controls.Add(this.menuStrip1);
 			this.Controls.Add(this.menuStrip2);
+			this.Controls.Add(this.menuStrip3);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "ProyectoTAP";
@@ -147,9 +170,13 @@ namespace ProyectoTAP
 			this.menuStrip1.PerformLayout();
 			this.menuStrip2.ResumeLayout(false);
 			this.menuStrip2.PerformLayout();
+			this.menuStrip3.ResumeLayout(false);
+			this.menuStrip3.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem carritoToolStripMenuItem;
+		private System.Windows.Forms.MenuStrip menuStrip3;
 		private System.Windows.Forms.ToolStripMenuItem agregarProductosToolStripMenuItem;
 		private System.Windows.Forms.MenuStrip menuStrip2;
 		private System.Windows.Forms.ToolStripMenuItem digesToolStripMenuItem;

@@ -73,6 +73,12 @@ namespace ProyectoTAP
 			FrmAgregarProductos agregar = new FrmAgregarProductos();
 			agregar.ShowDialog();
 		}
+		
+		void CarritoToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			FrmCarrito carrito = new FrmCarrito();
+			carrito.ShowDialog();
+		}
 	}
 	
 	

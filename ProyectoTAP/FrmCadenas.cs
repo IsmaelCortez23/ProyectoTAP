@@ -22,6 +22,7 @@ namespace ProyectoTAP
 		string nombre, descripcion, tipoPieza;
 		int id, costo;
 		ConexionDB conexion = new ConexionDB();
+		Producto producto = new Producto();
 		public FrmCadenas()
 		{
 			//
@@ -64,16 +65,20 @@ namespace ProyectoTAP
 		
 		void BtnCadenaCarritoClick(object sender, EventArgs e)
 		{
-			FrmCarrito carrito = new FrmCarrito();
 			
 			id = Convert.ToInt32(renglonSeleccionado.Cells["cod_producto"].Value.ToString());
 			nombre = renglonSeleccionado.Cells["nombre"].Value.ToString();
 			descripcion = renglonSeleccionado.Cells["descripcion"].Value.ToString();
 			tipoPieza =renglonSeleccionado.Cells["tipo_pieza"].Value.ToString();
-			costo = Convert.ToInt32(renglonSeleccionado.Cells["costo"].Value.ToString());
+			costo = Convert.ToInt32(renglonSeleccionado.Cells["precio"].Value.ToString());
 			
-			carrito.datosProducto(id, nombre, descripcion, tipoPieza, costo);
+			Producto prod = new Producto(id, nombre, descripcion, tipoPieza, costo);
+			producto.agregarLista(prod);
+			
 		}
+		
+		
+		
 	}
 		
 }
