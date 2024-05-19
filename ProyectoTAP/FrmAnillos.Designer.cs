@@ -42,6 +42,7 @@ namespace ProyectoTAP
 			this.label2 = new System.Windows.Forms.Label();
 			this.tbxDescripcionAnillos = new System.Windows.Forms.TextBox();
 			this.pbAnillos = new System.Windows.Forms.PictureBox();
+			this.btnAnilloCarrito = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvAnillos)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbAnillos)).BeginInit();
 			this.SuspendLayout();
@@ -50,17 +51,17 @@ namespace ProyectoTAP
 			// 
 			this.dgvAnillos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvAnillos.Location = new System.Drawing.Point(26, 33);
-			this.dgvAnillos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.dgvAnillos.Margin = new System.Windows.Forms.Padding(2);
 			this.dgvAnillos.Name = "dgvAnillos";
 			this.dgvAnillos.RowTemplate.Height = 24;
-			this.dgvAnillos.Size = new System.Drawing.Size(490, 253);
+			this.dgvAnillos.Size = new System.Drawing.Size(627, 253);
 			this.dgvAnillos.TabIndex = 0;
 			this.dgvAnillos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvAnillosCellContentClick);
 			// 
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(61, 327);
+			this.label1.Location = new System.Drawing.Point(23, 326);
 			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(94, 33);
@@ -69,15 +70,16 @@ namespace ProyectoTAP
 			// 
 			// tbxBuscar
 			// 
-			this.tbxBuscar.Location = new System.Drawing.Point(150, 330);
-			this.tbxBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tbxBuscar.Location = new System.Drawing.Point(112, 329);
+			this.tbxBuscar.Margin = new System.Windows.Forms.Padding(2);
 			this.tbxBuscar.Name = "tbxBuscar";
-			this.tbxBuscar.Size = new System.Drawing.Size(283, 20);
+			this.tbxBuscar.Size = new System.Drawing.Size(541, 20);
 			this.tbxBuscar.TabIndex = 2;
+			this.tbxBuscar.TextChanged += new System.EventHandler(this.TbxBuscarTextChanged);
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(588, 285);
+			this.label2.Location = new System.Drawing.Point(757, 351);
 			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(150, 20);
@@ -86,34 +88,46 @@ namespace ProyectoTAP
 			// 
 			// tbxDescripcionAnillos
 			// 
-			this.tbxDescripcionAnillos.Location = new System.Drawing.Point(588, 318);
-			this.tbxDescripcionAnillos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tbxDescripcionAnillos.Location = new System.Drawing.Point(757, 384);
+			this.tbxDescripcionAnillos.Margin = new System.Windows.Forms.Padding(2);
 			this.tbxDescripcionAnillos.Name = "tbxDescripcionAnillos";
 			this.tbxDescripcionAnillos.Size = new System.Drawing.Size(151, 20);
 			this.tbxDescripcionAnillos.TabIndex = 4;
 			// 
 			// pbAnillos
 			// 
-			this.pbAnillos.Location = new System.Drawing.Point(566, 24);
-			this.pbAnillos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.pbAnillos.Location = new System.Drawing.Point(742, 33);
+			this.pbAnillos.Margin = new System.Windows.Forms.Padding(2);
 			this.pbAnillos.Name = "pbAnillos";
-			this.pbAnillos.Size = new System.Drawing.Size(172, 228);
+			this.pbAnillos.Size = new System.Drawing.Size(188, 288);
 			this.pbAnillos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pbAnillos.TabIndex = 5;
 			this.pbAnillos.TabStop = false;
+			// 
+			// btnAnilloCarrito
+			// 
+			this.btnAnilloCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAnilloCarrito.Location = new System.Drawing.Point(409, 425);
+			this.btnAnilloCarrito.Name = "btnAnilloCarrito";
+			this.btnAnilloCarrito.Size = new System.Drawing.Size(244, 42);
+			this.btnAnilloCarrito.TabIndex = 9;
+			this.btnAnilloCarrito.Text = "&Agregar al Carrito";
+			this.btnAnilloCarrito.UseVisualStyleBackColor = true;
+			this.btnAnilloCarrito.Click += new System.EventHandler(this.BtnAnilloCarritoClick);
 			// 
 			// FrmAnillos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(808, 429);
+			this.ClientSize = new System.Drawing.Size(963, 515);
+			this.Controls.Add(this.btnAnilloCarrito);
 			this.Controls.Add(this.pbAnillos);
 			this.Controls.Add(this.tbxDescripcionAnillos);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.tbxBuscar);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.dgvAnillos);
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FrmAnillos";
 			this.Text = "FrmAnillos";
 			((System.ComponentModel.ISupportInitialize)(this.dgvAnillos)).EndInit();
@@ -121,6 +135,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnAnilloCarrito;
 		private System.Windows.Forms.PictureBox pbAnillos;
 		private System.Windows.Forms.TextBox tbxDescripcionAnillos;
 		private System.Windows.Forms.Label label2;

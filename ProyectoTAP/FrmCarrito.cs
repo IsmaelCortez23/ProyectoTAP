@@ -19,10 +19,10 @@ namespace ProyectoTAP
 	/// </summary>
 	public partial class FrmCarrito : Form
 	{
-		int id, costo, contado;
+		int id, costo, total;
 		string nombre, descripcion, tipoPieza;
 		ConexionDB conexion = new ConexionDB();
-		
+		DataGridViewRow renglonSeleccionado;
 		
 		public FrmCarrito()
 		{
@@ -35,8 +35,10 @@ namespace ProyectoTAP
 			dgvCarrito.Columns.Add("nombre","nombre");
 			dgvCarrito.Columns.Add("descripcion","descipcion");
 			dgvCarrito.Columns.Add("costo","costo");
+			dgvCarrito.Columns.Add("ruta","ruta");
 			llenarDatos();
-				
+			dgvCarrito.Columns[5].Visible = false;
+			tbxTotal.Text = Convert.ToString(total);
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -44,9 +46,27 @@ namespace ProyectoTAP
 		
 		public void llenarDatos(){
 			foreach(Producto prod in Producto.productos){
-				dgvCarrito.Rows.Add(prod.id, prod.tipoPieza, prod.nombre, prod.descripcion, prod.precio);
+				dgvCarrito.Rows.Add(prod.id, prod.tipoPieza, prod.nombre, prod.descripcion, prod.precio, prod.ruta);
+				total += Convert.ToInt32(prod.precio.ToString());
 			}
+		
 		}
 		
+		
+		void DgvCarritoCellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			foreach (DataGridViewRow renglon in dgvCarrito.Rows){
+				renglon.Selected = false;
+			}
+			renglonSeleccionado = dgvCarrito.Rows[e.RowIndex];
+			dgvCarrito.Rows[e.RowIndex].Selected=true;
+			string ruta = renglonSeleccionado.Cells["ruta"].Value.ToString();
+			pbCarrito.Image = Image.FromFile(ruta);
+		}
+		
+		void BtnEliminarProductoCarritoClick(object sender, EventArgs e)
+		{
+			dgvCarrito.Rows.Remove(renglonSeleccionado);
+		}
 	}
 }

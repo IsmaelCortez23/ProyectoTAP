@@ -19,6 +19,9 @@ namespace ProyectoTAP
 	/// </summary>
 	public partial class FrmAnillos : Form
 	{
+		string nombre, descripcion, tipoPieza, ruta;
+		int id, costo;
+		Producto producto = new Producto();
 		ConexionDB conexion = new ConexionDB();
 		public FrmAnillos()
 		{
@@ -52,6 +55,25 @@ namespace ProyectoTAP
 			ruta = conexion.rutaDeMiUsuario(ruta, "carlos");
 			
 			pbAnillos.Image = Image.FromFile(ruta);
+		}
+		
+		
+		void TbxBuscarTextChanged(object sender, EventArgs e)
+		{
+			dgvAnillos.DataSource = conexion.cargarDatos("SELECT * FROM productos WHERE descripcion LIKE '%"+tbxBuscar.Text+"%'"+
+			                                             " AND tipo_pieza = 'anillo'");
+		}
+		
+		void BtnAnilloCarritoClick(object sender, EventArgs e)
+		{
+			id = Convert.ToInt32(renglonSeleccionado.Cells["cod_producto"].Value.ToString());
+			nombre = renglonSeleccionado.Cells["nombre"].Value.ToString();
+			descripcion = renglonSeleccionado.Cells["descripcion"].Value.ToString();
+			tipoPieza =renglonSeleccionado.Cells["tipo_pieza"].Value.ToString();
+			costo = Convert.ToInt32(renglonSeleccionado.Cells["precio"].Value.ToString());
+			ruta = renglonSeleccionado.Cells["ruta"].Value.ToString();
+			Producto prod = new Producto(id, tipoPieza, nombre, descripcion, costo, ruta);
+			producto.agregarLista(prod);
 		}
 	}
 }

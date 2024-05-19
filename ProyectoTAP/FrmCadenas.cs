@@ -19,7 +19,7 @@ namespace ProyectoTAP
 	/// </summary>
 	public partial class FrmCadenas : Form
 	{
-		string nombre, descripcion, tipoPieza;
+		string nombre, descripcion, tipoPieza, ruta;
 		int id, costo;
 		ConexionDB conexion = new ConexionDB();
 		Producto producto = new Producto();
@@ -71,8 +71,8 @@ namespace ProyectoTAP
 			descripcion = renglonSeleccionado.Cells["descripcion"].Value.ToString();
 			tipoPieza =renglonSeleccionado.Cells["tipo_pieza"].Value.ToString();
 			costo = Convert.ToInt32(renglonSeleccionado.Cells["precio"].Value.ToString());
-			
-			Producto prod = new Producto(id, nombre, descripcion, tipoPieza, costo);
+			ruta = renglonSeleccionado.Cells["ruta"].Value.ToString();
+			Producto prod = new Producto(id, tipoPieza, nombre, descripcion, costo, ruta);
 			producto.agregarLista(prod);
 			
 		}
