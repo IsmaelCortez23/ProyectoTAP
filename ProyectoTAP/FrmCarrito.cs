@@ -23,7 +23,7 @@ namespace ProyectoTAP
 		string nombre, descripcion, tipoPieza;
 		ConexionDB conexion = new ConexionDB();
 		DataGridViewRow renglonSeleccionado;
-		Producto productos = new Producto();
+		Producto producto = new Producto();
 		public FrmCarrito()
 		{
 			//
@@ -71,14 +71,16 @@ namespace ProyectoTAP
 				total-=Convert.ToInt32(renglonSeleccionado.Cells["costo"].Value);
 				tbxTotal.Text=total.ToString();
 				dgvCarrito.Rows.Remove(renglonSeleccionado);
-				productos.
-				 renglonSeleccionado = null;
+				//productos.renglonSeleccionado = null;
+				//producto.productos.Remove()
 				
 			}
 			else{
 				MessageBox.Show("No hay productos seleccionados para eliminar.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 		}
+		
+		
 		
 		void RegresarClick(object sender, EventArgs e)
 		{
