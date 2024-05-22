@@ -33,6 +33,7 @@ namespace ProyectoTAP
 			                                          "	WHERE tipo_pieza = 'Anillo'");
 			dgvAnillos.Columns[5].Visible = false;
 			this.WindowState = FormWindowState.Maximized;
+			dgvAnillos.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.AllCells;
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
@@ -74,6 +75,13 @@ namespace ProyectoTAP
 			ruta = renglonSeleccionado.Cells["ruta"].Value.ToString();
 			Producto prod = new Producto(id, tipoPieza, nombre, descripcion, costo, ruta);
 			producto.agregarLista(prod);
+		}
+		
+		void RegresarClick(object sender, EventArgs e)
+		{
+			MainForm mainform= new MainForm();
+			mainform.Show();
+			this.Hide();
 		}
 	}
 }

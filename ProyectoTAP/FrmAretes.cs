@@ -29,7 +29,7 @@ namespace ProyectoTAP
 			                                          "	WHERE tipo_pieza = 'Aretes'");
 			 dgvAretes.Columns[5].Visible = false;
 			this.WindowState = FormWindowState.Maximized;
-			
+			dgvAretes.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.AllCells;
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -56,6 +56,13 @@ namespace ProyectoTAP
 		void TxtBuscarTextChanged(object sender, EventArgs e)
 		{
 			dgvAretes.DataSource = conexion.cargarDatos("SELECT * FROM productos WHERE descripcion LIKE '%"+txtBuscarAretes.Text+"%'");
+		}
+		
+		void RegresarClick(object sender, EventArgs e)
+		{
+			MainForm mainform= new MainForm();
+			mainform.Show();
+			this.Hide();
 		}
 	}
 }

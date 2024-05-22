@@ -47,6 +47,7 @@ namespace ProyectoTAP
 			this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip3 = new System.Windows.Forms.MenuStrip();
 			this.carritoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.Salir = new System.Windows.Forms.Button();
 			this.menuStrip1.SuspendLayout();
 			this.menuStrip2.SuspendLayout();
 			this.menuStrip3.SuspendLayout();
@@ -155,11 +156,22 @@ namespace ProyectoTAP
 			this.carritoToolStripMenuItem.Text = "Carrito";
 			this.carritoToolStripMenuItem.Click += new System.EventHandler(this.CarritoToolStripMenuItemClick);
 			// 
+			// Salir
+			// 
+			this.Salir.Location = new System.Drawing.Point(572, 411);
+			this.Salir.Name = "Salir";
+			this.Salir.Size = new System.Drawing.Size(75, 23);
+			this.Salir.TabIndex = 3;
+			this.Salir.Text = "Salir";
+			this.Salir.UseVisualStyleBackColor = true;
+			this.Salir.Click += new System.EventHandler(this.SalirClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(729, 498);
+			this.Controls.Add(this.Salir);
 			this.Controls.Add(this.menuStrip1);
 			this.Controls.Add(this.menuStrip2);
 			this.Controls.Add(this.menuStrip3);
@@ -175,6 +187,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Salir;
 		private System.Windows.Forms.ToolStripMenuItem carritoToolStripMenuItem;
 		private System.Windows.Forms.MenuStrip menuStrip3;
 		private System.Windows.Forms.ToolStripMenuItem agregarProductosToolStripMenuItem;

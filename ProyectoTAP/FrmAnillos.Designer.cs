@@ -43,6 +43,7 @@ namespace ProyectoTAP
 			this.tbxDescripcionAnillos = new System.Windows.Forms.TextBox();
 			this.pbAnillos = new System.Windows.Forms.PictureBox();
 			this.btnAnilloCarrito = new System.Windows.Forms.Button();
+			this.Regresar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvAnillos)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbAnillos)).BeginInit();
 			this.SuspendLayout();
@@ -115,11 +116,22 @@ namespace ProyectoTAP
 			this.btnAnilloCarrito.UseVisualStyleBackColor = true;
 			this.btnAnilloCarrito.Click += new System.EventHandler(this.BtnAnilloCarritoClick);
 			// 
+			// Regresar
+			// 
+			this.Regresar.Location = new System.Drawing.Point(790, 475);
+			this.Regresar.Name = "Regresar";
+			this.Regresar.Size = new System.Drawing.Size(75, 23);
+			this.Regresar.TabIndex = 10;
+			this.Regresar.Text = "Regresar";
+			this.Regresar.UseVisualStyleBackColor = true;
+			this.Regresar.Click += new System.EventHandler(this.RegresarClick);
+			// 
 			// FrmAnillos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(963, 515);
+			this.Controls.Add(this.Regresar);
 			this.Controls.Add(this.btnAnilloCarrito);
 			this.Controls.Add(this.pbAnillos);
 			this.Controls.Add(this.tbxDescripcionAnillos);
@@ -135,6 +147,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Regresar;
 		private System.Windows.Forms.Button btnAnilloCarrito;
 		private System.Windows.Forms.PictureBox pbAnillos;
 		private System.Windows.Forms.TextBox tbxDescripcionAnillos;

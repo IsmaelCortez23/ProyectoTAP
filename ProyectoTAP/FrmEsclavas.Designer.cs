@@ -44,6 +44,7 @@ namespace ProyectoTAP
 			this.label1 = new System.Windows.Forms.Label();
 			this.tbxBuscarEsclavas = new System.Windows.Forms.TextBox();
 			this.dgvEsclavas = new System.Windows.Forms.DataGridView();
+			this.Regresar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pbEsclavas)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvEsclavas)).BeginInit();
 			this.SuspendLayout();
@@ -51,7 +52,7 @@ namespace ProyectoTAP
 			// btnCadenaCarrito
 			// 
 			this.btnCadenaCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCadenaCarrito.Location = new System.Drawing.Point(620, 413);
+			this.btnCadenaCarrito.Location = new System.Drawing.Point(620, 369);
 			this.btnCadenaCarrito.Name = "btnCadenaCarrito";
 			this.btnCadenaCarrito.Size = new System.Drawing.Size(203, 42);
 			this.btnCadenaCarrito.TabIndex = 15;
@@ -118,11 +119,22 @@ namespace ProyectoTAP
 			this.dgvEsclavas.TabIndex = 9;
 			this.dgvEsclavas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEsclavasCellContentClick);
 			// 
+			// Regresar
+			// 
+			this.Regresar.Location = new System.Drawing.Point(686, 431);
+			this.Regresar.Name = "Regresar";
+			this.Regresar.Size = new System.Drawing.Size(75, 23);
+			this.Regresar.TabIndex = 16;
+			this.Regresar.Text = "Regresar";
+			this.Regresar.UseVisualStyleBackColor = true;
+			this.Regresar.Click += new System.EventHandler(this.RegresarClick);
+			// 
 			// FrmEsclavas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(859, 483);
+			this.Controls.Add(this.Regresar);
 			this.Controls.Add(this.btnCadenaCarrito);
 			this.Controls.Add(this.pbEsclavas);
 			this.Controls.Add(this.label2);
@@ -130,7 +142,7 @@ namespace ProyectoTAP
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.tbxBuscarEsclavas);
 			this.Controls.Add(this.dgvEsclavas);
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FrmEsclavas";
 			this.Text = "FrmEsclavas";
 			this.Load += new System.EventHandler(this.FrmEsclavasLoad);
@@ -139,6 +151,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Regresar;
 		private System.Windows.Forms.DataGridView dgvEsclavas;
 		private System.Windows.Forms.TextBox tbxBuscarEsclavas;
 		private System.Windows.Forms.Label label1;

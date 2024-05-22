@@ -33,6 +33,7 @@ namespace ProyectoTAP
 			                                          "	WHERE tipo_pieza = 'Cadena'");
 			dgvCadenas.Columns[5].Visible = false;
 			this.WindowState = FormWindowState.Maximized;
+			dgvCadenas.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.AllCells;
 			
 			
 			//
@@ -77,7 +78,12 @@ namespace ProyectoTAP
 			
 		}
 		
-		
+		void RegresarClick(object sender, EventArgs e)
+		{
+			MainForm mainform= new MainForm();
+			mainform.Show();
+			this.Hide();
+		}
 		
 	}
 		

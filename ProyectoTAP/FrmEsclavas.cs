@@ -56,5 +56,12 @@ namespace ProyectoTAP
 		{
 			
 		}
+		
+		void RegresarClick(object sender, EventArgs e)
+		{
+			MainForm mainform= new MainForm();
+			mainform.Show();
+			this.Hide();
+		}
 	}
 }

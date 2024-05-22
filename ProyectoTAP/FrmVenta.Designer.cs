@@ -50,62 +50,70 @@ namespace Paso_de_datos
 			// dataGridView1
 			// 
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(53, 50);
+			this.dataGridView1.Location = new System.Drawing.Point(40, 41);
+			this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(448, 182);
+			this.dataGridView1.Size = new System.Drawing.Size(336, 148);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// Total
 			// 
-			this.Total.Location = new System.Drawing.Point(401, 261);
+			this.Total.Location = new System.Drawing.Point(301, 212);
+			this.Total.Margin = new System.Windows.Forms.Padding(2);
 			this.Total.Name = "Total";
-			this.Total.Size = new System.Drawing.Size(100, 22);
+			this.Total.Size = new System.Drawing.Size(76, 20);
 			this.Total.TabIndex = 1;
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(295, 264);
+			this.label1.Location = new System.Drawing.Point(221, 214);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(100, 23);
+			this.label1.Size = new System.Drawing.Size(75, 19);
 			this.label1.TabIndex = 2;
 			this.label1.Text = "Total";
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(548, 62);
+			this.label2.Location = new System.Drawing.Point(411, 50);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(100, 23);
+			this.label2.Size = new System.Drawing.Size(75, 19);
 			this.label2.TabIndex = 3;
 			this.label2.Text = "Pagara con:";
 			// 
 			// Dinero
 			// 
-			this.Dinero.Location = new System.Drawing.Point(671, 63);
+			this.Dinero.Location = new System.Drawing.Point(503, 51);
+			this.Dinero.Margin = new System.Windows.Forms.Padding(2);
 			this.Dinero.Name = "Dinero";
-			this.Dinero.Size = new System.Drawing.Size(100, 22);
+			this.Dinero.Size = new System.Drawing.Size(76, 20);
 			this.Dinero.TabIndex = 4;
 			// 
 			// Cambio
 			// 
-			this.Cambio.Location = new System.Drawing.Point(671, 114);
+			this.Cambio.Location = new System.Drawing.Point(503, 93);
+			this.Cambio.Margin = new System.Windows.Forms.Padding(2);
 			this.Cambio.Name = "Cambio";
-			this.Cambio.Size = new System.Drawing.Size(100, 22);
+			this.Cambio.Size = new System.Drawing.Size(76, 20);
 			this.Cambio.TabIndex = 6;
 			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(548, 113);
+			this.label3.Location = new System.Drawing.Point(411, 92);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(100, 23);
+			this.label3.Size = new System.Drawing.Size(75, 19);
 			this.label3.TabIndex = 5;
 			this.label3.Text = "Cambio:";
 			// 
 			// Pagar
 			// 
-			this.Pagar.Location = new System.Drawing.Point(619, 282);
+			this.Pagar.Location = new System.Drawing.Point(464, 229);
+			this.Pagar.Margin = new System.Windows.Forms.Padding(2);
 			this.Pagar.Name = "Pagar";
-			this.Pagar.Size = new System.Drawing.Size(75, 23);
+			this.Pagar.Size = new System.Drawing.Size(56, 19);
 			this.Pagar.TabIndex = 7;
 			this.Pagar.Text = "Pagar";
 			this.Pagar.UseVisualStyleBackColor = true;
@@ -113,9 +121,9 @@ namespace Paso_de_datos
 			// 
 			// Venta
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(801, 440);
+			this.ClientSize = new System.Drawing.Size(601, 358);
 			this.Controls.Add(this.Pagar);
 			this.Controls.Add(this.Cambio);
 			this.Controls.Add(this.label3);
@@ -124,6 +132,7 @@ namespace Paso_de_datos
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.Total);
 			this.Controls.Add(this.dataGridView1);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "Venta";
 			this.Text = "Venta";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -44,6 +44,7 @@ namespace ProyectoTAP
 			this.label2 = new System.Windows.Forms.Label();
 			this.pbCadenas = new System.Windows.Forms.PictureBox();
 			this.btnCadenaCarrito = new System.Windows.Forms.Button();
+			this.Regresar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvCadenas)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCadenas)).BeginInit();
 			this.SuspendLayout();
@@ -120,12 +121,23 @@ namespace ProyectoTAP
 			this.btnCadenaCarrito.UseVisualStyleBackColor = true;
 			this.btnCadenaCarrito.Click += new System.EventHandler(this.BtnCadenaCarritoClick);
 			// 
+			// Regresar
+			// 
+			this.Regresar.Location = new System.Drawing.Point(978, 477);
+			this.Regresar.Name = "Regresar";
+			this.Regresar.Size = new System.Drawing.Size(75, 23);
+			this.Regresar.TabIndex = 9;
+			this.Regresar.Text = "Regresar";
+			this.Regresar.UseVisualStyleBackColor = true;
+			this.Regresar.Click += new System.EventHandler(this.RegresarClick);
+			// 
 			// FrmCadenas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
 			this.ClientSize = new System.Drawing.Size(1187, 524);
+			this.Controls.Add(this.Regresar);
 			this.Controls.Add(this.btnCadenaCarrito);
 			this.Controls.Add(this.pbCadenas);
 			this.Controls.Add(this.label2);
@@ -140,6 +152,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Regresar;
 		private System.Windows.Forms.Button btnCadenaCarrito;
 		private System.Windows.Forms.PictureBox pbCadenas;
 		private System.Windows.Forms.Label label2;

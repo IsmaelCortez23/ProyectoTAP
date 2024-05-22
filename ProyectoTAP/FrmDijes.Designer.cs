@@ -44,6 +44,7 @@ namespace ProyectoTAP
 			this.label1 = new System.Windows.Forms.Label();
 			this.tbxBuscarDije = new System.Windows.Forms.TextBox();
 			this.dgvDije = new System.Windows.Forms.DataGridView();
+			this.Regresar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pbDije)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvDije)).BeginInit();
 			this.SuspendLayout();
@@ -51,57 +52,51 @@ namespace ProyectoTAP
 			// btnDijeCarrito
 			// 
 			this.btnDijeCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnDijeCarrito.Location = new System.Drawing.Point(862, 532);
-			this.btnDijeCarrito.Margin = new System.Windows.Forms.Padding(4);
+			this.btnDijeCarrito.Location = new System.Drawing.Point(647, 399);
 			this.btnDijeCarrito.Name = "btnDijeCarrito";
-			this.btnDijeCarrito.Size = new System.Drawing.Size(271, 52);
+			this.btnDijeCarrito.Size = new System.Drawing.Size(203, 42);
 			this.btnDijeCarrito.TabIndex = 29;
 			this.btnDijeCarrito.Text = "&Agregar al Carrito";
 			this.btnDijeCarrito.UseVisualStyleBackColor = true;
 			// 
 			// pbDije
 			// 
-			this.pbDije.Location = new System.Drawing.Point(862, 72);
-			this.pbDije.Margin = new System.Windows.Forms.Padding(4);
+			this.pbDije.Location = new System.Drawing.Point(646, 58);
 			this.pbDije.Name = "pbDije";
-			this.pbDije.Size = new System.Drawing.Size(271, 264);
+			this.pbDije.Size = new System.Drawing.Size(203, 214);
 			this.pbDije.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pbDije.TabIndex = 28;
 			this.pbDije.TabStop = false;
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(904, 360);
-			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label2.Location = new System.Drawing.Point(678, 292);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(184, 28);
+			this.label2.Size = new System.Drawing.Size(138, 23);
 			this.label2.TabIndex = 27;
 			this.label2.Text = "Descripcion Del Producto";
 			// 
 			// tbxDescripcionDije
 			// 
-			this.tbxDescripcionDije.Location = new System.Drawing.Point(862, 402);
-			this.tbxDescripcionDije.Margin = new System.Windows.Forms.Padding(4);
+			this.tbxDescripcionDije.Location = new System.Drawing.Point(646, 327);
 			this.tbxDescripcionDije.Name = "tbxDescripcionDije";
-			this.tbxDescripcionDije.Size = new System.Drawing.Size(271, 22);
+			this.tbxDescripcionDije.Size = new System.Drawing.Size(204, 20);
 			this.tbxDescripcionDije.TabIndex = 26;
 			// 
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(82, 505);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(62, 410);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(116, 25);
+			this.label1.Size = new System.Drawing.Size(87, 20);
 			this.label1.TabIndex = 25;
 			this.label1.Text = "Buscar: ";
 			// 
 			// tbxBuscarDije
 			// 
-			this.tbxBuscarDije.Location = new System.Drawing.Point(206, 509);
-			this.tbxBuscarDije.Margin = new System.Windows.Forms.Padding(4);
+			this.tbxBuscarDije.Location = new System.Drawing.Point(154, 414);
 			this.tbxBuscarDije.Name = "tbxBuscarDije";
-			this.tbxBuscarDije.Size = new System.Drawing.Size(557, 22);
+			this.tbxBuscarDije.Size = new System.Drawing.Size(419, 20);
 			this.tbxBuscarDije.TabIndex = 24;
 			// 
 			// dgvDije
@@ -118,18 +113,28 @@ namespace ProyectoTAP
 			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.dgvDije.DefaultCellStyle = dataGridViewCellStyle1;
-			this.dgvDije.Location = new System.Drawing.Point(82, 59);
-			this.dgvDije.Margin = new System.Windows.Forms.Padding(4);
+			this.dgvDije.Location = new System.Drawing.Point(62, 48);
 			this.dgvDije.Name = "dgvDije";
-			this.dgvDije.Size = new System.Drawing.Size(681, 365);
+			this.dgvDije.Size = new System.Drawing.Size(511, 297);
 			this.dgvDije.TabIndex = 23;
 			this.dgvDije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDijeCellContentClick);
 			// 
+			// Regresar
+			// 
+			this.Regresar.Location = new System.Drawing.Point(723, 468);
+			this.Regresar.Name = "Regresar";
+			this.Regresar.Size = new System.Drawing.Size(75, 23);
+			this.Regresar.TabIndex = 30;
+			this.Regresar.Text = "Regresar";
+			this.Regresar.UseVisualStyleBackColor = true;
+			this.Regresar.Click += new System.EventHandler(this.RegresarClick);
+			// 
 			// FrmDije
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1215, 642);
+			this.ClientSize = new System.Drawing.Size(911, 522);
+			this.Controls.Add(this.Regresar);
 			this.Controls.Add(this.btnDijeCarrito);
 			this.Controls.Add(this.pbDije);
 			this.Controls.Add(this.label2);
@@ -137,6 +142,7 @@ namespace ProyectoTAP
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.tbxBuscarDije);
 			this.Controls.Add(this.dgvDije);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "FrmDije";
 			this.Text = "FrmDije";
 			((System.ComponentModel.ISupportInitialize)(this.pbDije)).EndInit();
@@ -144,6 +150,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Regresar;
 		private System.Windows.Forms.DataGridView dgvDije;
 		private System.Windows.Forms.TextBox tbxBuscarDije;
 		private System.Windows.Forms.Label label1;
