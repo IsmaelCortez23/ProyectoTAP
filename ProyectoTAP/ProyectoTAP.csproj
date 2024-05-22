@@ -115,6 +115,9 @@
     <EmbeddedResource Include="FrmCarrito.resx">
       <DependentUpon>FrmCarrito.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEsclavas.resx">
       <DependentUpon>FrmEsclavas.Designer.cs</DependentUpon>
     </EmbeddedResource>
