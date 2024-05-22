@@ -41,6 +41,7 @@ namespace ProyectoTAP
 			this.tbxTotal = new System.Windows.Forms.TextBox();
 			this.pbCarrito = new System.Windows.Forms.PictureBox();
 			this.btnEliminarProductoCarrito = new System.Windows.Forms.Button();
+			this.Regresar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCarrito)).BeginInit();
 			this.SuspendLayout();
@@ -73,6 +74,7 @@ namespace ProyectoTAP
 			this.tbxTotal.Name = "tbxTotal";
 			this.tbxTotal.Size = new System.Drawing.Size(162, 31);
 			this.tbxTotal.TabIndex = 3;
+			this.tbxTotal.TextChanged += new System.EventHandler(this.TbxTotalTextChanged);
 			// 
 			// pbCarrito
 			// 
@@ -94,11 +96,22 @@ namespace ProyectoTAP
 			this.btnEliminarProductoCarrito.UseVisualStyleBackColor = true;
 			this.btnEliminarProductoCarrito.Click += new System.EventHandler(this.BtnEliminarProductoCarritoClick);
 			// 
+			// Regresar
+			// 
+			this.Regresar.Location = new System.Drawing.Point(862, 440);
+			this.Regresar.Name = "Regresar";
+			this.Regresar.Size = new System.Drawing.Size(75, 23);
+			this.Regresar.TabIndex = 10;
+			this.Regresar.Text = "Regresar";
+			this.Regresar.UseVisualStyleBackColor = true;
+			this.Regresar.Click += new System.EventHandler(this.RegresarClick);
+			// 
 			// FrmCarrito
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1117, 510);
+			this.Controls.Add(this.Regresar);
 			this.Controls.Add(this.btnEliminarProductoCarrito);
 			this.Controls.Add(this.pbCarrito);
 			this.Controls.Add(this.label1);
@@ -111,6 +124,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Regresar;
 		private System.Windows.Forms.Button btnEliminarProductoCarrito;
 		private System.Windows.Forms.PictureBox pbCarrito;
 		private System.Windows.Forms.TextBox tbxTotal;

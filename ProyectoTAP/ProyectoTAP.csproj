@@ -111,8 +111,17 @@
     <EmbeddedResource Include="FrmCarrito.resx">
       <DependentUpon>FrmCarrito.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDijes.resx">
+      <DependentUpon>FrmDijes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEsclavas.resx">
       <DependentUpon>FrmEsclavas.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJuegos.resx">
+      <DependentUpon>FrmJuegos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVenta.resx">
+      <DependentUpon>FrmVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

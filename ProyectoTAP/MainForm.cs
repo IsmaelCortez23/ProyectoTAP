@@ -79,6 +79,11 @@ namespace ProyectoTAP
 			FrmCarrito carrito = new FrmCarrito();
 			carrito.ShowDialog();
 		}
+		
+		void SalirClick(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 	
 	

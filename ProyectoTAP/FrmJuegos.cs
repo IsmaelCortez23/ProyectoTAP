@@ -26,6 +26,8 @@ namespace ProyectoTAP
 			InitializeComponent();
 			dgvJuego.DataSource = conexion.cargarDatos("Select cod_producto, tipo_pieza, nombre, Descripcion, precio, ruta from productos"+
 			                                          "	WHERE tipo_pieza = 'Juego'");
+			
+			dgvJuego.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.AllCells;
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -46,6 +48,13 @@ namespace ProyectoTAP
 			ruta = conexion.rutaDeMiUsuario(ruta, "carlos");
 			
 			pbJuego.Image = Image.FromFile(ruta);			
+		}
+		
+		void RegresarClick(object sender, EventArgs e)
+		{
+			MainForm mainform= new MainForm();
+			mainform.Show();
+			this.Hide();
 		}
 	}
 }

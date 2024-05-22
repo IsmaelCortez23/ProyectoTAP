@@ -52,6 +52,7 @@ namespace ProyectoTAP
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.pbAgregarProducto = new System.Windows.Forms.PictureBox();
+			this.Regresar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvAgregarProducto)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbAgregarProducto)).BeginInit();
 			this.SuspendLayout();
@@ -195,11 +196,22 @@ namespace ProyectoTAP
 			this.pbAgregarProducto.TabIndex = 14;
 			this.pbAgregarProducto.TabStop = false;
 			// 
+			// Regresar
+			// 
+			this.Regresar.Location = new System.Drawing.Point(817, 428);
+			this.Regresar.Name = "Regresar";
+			this.Regresar.Size = new System.Drawing.Size(75, 23);
+			this.Regresar.TabIndex = 15;
+			this.Regresar.Text = "Regresar";
+			this.Regresar.UseVisualStyleBackColor = true;
+			this.Regresar.Click += new System.EventHandler(this.RegresarClick);
+			// 
 			// FrmAgregarProductos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1191, 600);
+			this.Controls.Add(this.Regresar);
 			this.Controls.Add(this.pbAgregarProducto);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
@@ -222,6 +234,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Regresar;
 		private System.Windows.Forms.PictureBox pbAgregarProducto;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button1;

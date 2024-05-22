@@ -15,9 +15,11 @@ namespace ProyectoTAP
 	/// <summary>
 	/// Description of FrmAgregarProductos.
 	/// </summary>
+	/// 
 	public partial class FrmAgregarProductos : Form
 	{
 		ConexionDB conexion = new ConexionDB();
+		
 		public FrmAgregarProductos()
 		{
 			//
@@ -28,6 +30,7 @@ namespace ProyectoTAP
 			dgvAgregarProducto.DataSource=conexion.cargarDatos("Select cod_producto, tipo_pieza, nombre, Descripcion, precio, ruta from productos");
 			dgvAgregarProducto.Columns[5].Visible = false;
 			this.WindowState = FormWindowState.Maximized;
+			dgvAgregarProducto.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.AllCells;
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
@@ -80,6 +83,14 @@ namespace ProyectoTAP
 			
 			pbAgregarProducto.Image = Image.FromFile(ruta);
 		}
+		
+		void RegresarClick(object sender, EventArgs e)
+		{
+			MainForm mainform= new MainForm();
+			mainform.Show();
+			this.Hide();
+		}
+		
 	}
 }
 

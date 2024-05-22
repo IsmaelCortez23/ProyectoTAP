@@ -19,11 +19,11 @@ namespace ProyectoTAP
 	/// </summary>
 	public partial class FrmCarrito : Form
 	{
-		int id, costo, total;
+		int id, costo, total=0;
 		string nombre, descripcion, tipoPieza;
 		ConexionDB conexion = new ConexionDB();
 		DataGridViewRow renglonSeleccionado;
-		
+		Producto productos = new Producto();
 		public FrmCarrito()
 		{
 			//
@@ -49,6 +49,7 @@ namespace ProyectoTAP
 				dgvCarrito.Rows.Add(prod.id, prod.tipoPieza, prod.nombre, prod.descripcion, prod.precio, prod.ruta);
 				total += Convert.ToInt32(prod.precio.ToString());
 			}
+			tbxTotal.Text=total.ToString();
 		
 		}
 		
@@ -66,7 +67,29 @@ namespace ProyectoTAP
 		
 		void BtnEliminarProductoCarritoClick(object sender, EventArgs e)
 		{
-			dgvCarrito.Rows.Remove(renglonSeleccionado);
+			if(renglonSeleccionado!=null){
+				total-=Convert.ToInt32(renglonSeleccionado.Cells["costo"].Value);
+				tbxTotal.Text=total.ToString();
+				dgvCarrito.Rows.Remove(renglonSeleccionado);
+				productos.
+				 renglonSeleccionado = null;
+				
+			}
+			else{
+				MessageBox.Show("No hay productos seleccionados para eliminar.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+		
+		void RegresarClick(object sender, EventArgs e)
+		{
+			MainForm mainform= new MainForm();
+			mainform.Show();
+			this.Hide();
+		}
+		
+		void TbxTotalTextChanged(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

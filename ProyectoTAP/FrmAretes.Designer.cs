@@ -42,6 +42,7 @@ namespace ProyectoTAP
 			this.ptrFotos = new System.Windows.Forms.PictureBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tbxDescripciónAretes = new System.Windows.Forms.TextBox();
+			this.Regresar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvAretes)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptrFotos)).BeginInit();
 			this.SuspendLayout();
@@ -103,11 +104,22 @@ namespace ProyectoTAP
 			this.tbxDescripciónAretes.Size = new System.Drawing.Size(76, 20);
 			this.tbxDescripciónAretes.TabIndex = 5;
 			// 
+			// Regresar
+			// 
+			this.Regresar.Location = new System.Drawing.Point(650, 383);
+			this.Regresar.Name = "Regresar";
+			this.Regresar.Size = new System.Drawing.Size(75, 23);
+			this.Regresar.TabIndex = 6;
+			this.Regresar.Text = "Regresar";
+			this.Regresar.UseVisualStyleBackColor = true;
+			this.Regresar.Click += new System.EventHandler(this.RegresarClick);
+			// 
 			// FrmAretes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(818, 416);
+			this.Controls.Add(this.Regresar);
 			this.Controls.Add(this.tbxDescripciónAretes);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.ptrFotos);
@@ -122,6 +134,7 @@ namespace ProyectoTAP
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button Regresar;
 		private System.Windows.Forms.TextBox tbxDescripciónAretes;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.PictureBox ptrFotos;
