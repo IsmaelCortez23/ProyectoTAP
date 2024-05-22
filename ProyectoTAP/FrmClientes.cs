@@ -28,5 +28,15 @@ namespace ProyectoTAP
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void FrmClientesLoad(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Label4Click(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }

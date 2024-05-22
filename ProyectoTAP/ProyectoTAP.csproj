@@ -115,8 +115,13 @@
     <EmbeddedResource Include="FrmCarrito.resx">
       <DependentUpon>FrmCarrito.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmDijes.resx">
       <DependentUpon>FrmDijes.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+>>>>>>> nueva
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEsclavas.resx">
       <DependentUpon>FrmEsclavas.Designer.cs</DependentUpon>
